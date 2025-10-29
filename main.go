@@ -62,7 +62,7 @@ func main(){
 		spin := GetSpin(symbolArr, 3, 3)
 		PrintSpin(spin)
 		winningLines := checkWin(spin, multipliers)
-		// fmt.Println(winningLines)
+		
 		for i, multi := range winningLines {
 			win := multi * bet
 			balance += win
@@ -78,6 +78,6 @@ func main(){
 
 	fmt.Printf("You left with, $%d \n", balance )
 
-	// video at 54:31
+
 
 }
